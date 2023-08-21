@@ -28,6 +28,14 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+    height: 100%;
+    
+}
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    
 }
 .header-container {
     text-align: center;
@@ -40,31 +48,90 @@ body {
     letter-spacing: 0.2em;
     padding-left: 1em;
 }
-.nav-container ul {
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 1em;
+}
+.menu-icon {
+    position: relative;
+    cursor: pointer;
+    height: 25px;
+}
+.nav-icon {
+    background-color: var(--color1);
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    position: relative;
+    
+}
+/* icone de tres linhas do botão menu */
+.nav-icon::after, .nav-icon::before{
+    content: "";
+    background-color: var(--color1);
+    display: inline-block;
+    height: 2px;
+    width: 24px;
+    position: absolute;
+    transition: .6s;
+}
+.nav-icon::after {
+transform: translateY(8px) ;
+}
+.nav-icon::before {
+transform: translateY(-8px) ;
+}
+.menu-btn:checked ~ .header-menu {
+max-height: 100vh;
+}
+/* icone em x  do botão menu */
+.menu-btn:checked+.menu-icon .nav-icon{
+background-color: transparent;
+}
+.menu-btn:checked+.menu-icon .nav-icon::after{
+transform: rotate(45deg);
+}
+.menu-btn:checked+.menu-icon .nav-icon::before{
+transform: rotate(-45deg);
+}
+
+/* abrir janela menu quando utiliza tab */
+.header-menu:focus-within{
+    max-height: 100vh;
+
+}
+.header-menu {
     text-align: center;
-    padding: 1em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+    background-color: var(--color);
 }
 .nav-container li {
     list-style: none;
     padding: 0.3em;
 }
-.nav-container li:hover {
-    background-color: var(--color3);
-    border-radius: 5px;
-    text-transform: uppercase;
-}
-.nav-container li a:focus {
-    background-color: var(--color3);
-    border-radius: 5px; 
-    text-transform: uppercase;
-    display: block;
-}
-
 .nav-container a{
     color: var(--color1);
     text-decoration: none;
+    display: block;
+    padding: .3em ;
 }
-
+.nav-container li a:hover { 
+    background-color: var(--color4);
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.nav-container li a:focus {
+    background-color: var(--color4);
+    text-transform: uppercase;
+}
 .section-img {
     background-color: var(--color);
     text-align: center;
@@ -76,23 +143,34 @@ body {
 }
 
 /* --> RESPONSIVE MENU <--  */
-@media screen and (min-width:43.75em){
+@media screen and (min-width:59.37em){
     .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         position: sticky;
         top: 0;
         left: 0;
+    }
+    .header-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-menu {
+        position: static;
+        max-height: initial;
+    }
+    .menu-btn, .menu-icon {
+        display: none;
     }
     .nav-container ul {
         display: flex;
         gap: 0.6em;
     }
-    .nav-container li:hover {
+    .nav-container li a:hover { 
+        background-color: var(--color4);
         text-transform: none;
     }
     .nav-container li a:focus {
+        background-color: var(--color4);
         text-transform: none;
     }
 }
