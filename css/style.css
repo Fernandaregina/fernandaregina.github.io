@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Nunito:wght@200;400&family=PT+Sans&display=swap');
+
+:root {
+    --font-titulos: 'Montserrat';
+    --font-secundaria: 'Nunito';
+
+    --color:  #2C3437;
+    --color1: #F3E8EE;
+    --color2: #A5C4CF;
+    --color3: #687B82;
+    --color4: #72878F;
+    --color5: #546369;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--font-secundaria);
+}
+
+/* --> HEADER <--  */
+
+.header {
+    height: 100%;
+    background: var(--color);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.header-container {
+    text-align: center;
+}
+.header-title {
+    color: var(--color1);
+    font-family: var(--font-titulos);
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 0.2em;
+    padding-left: 1em;
+}
+.nav-container ul {
+    text-align: center;
+    padding: 1em;
+}
+.nav-container li {
+    list-style: none;
+    padding: 0.3em;
+}
+.nav-container li:hover {
+    background-color: var(--color3);
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.nav-container li a:focus {
+    background-color: var(--color3);
+    border-radius: 5px; 
+    text-transform: uppercase;
+    display: block;
+}
+
+.nav-container a{
+    color: var(--color1);
+    text-decoration: none;
+}
+
+.section-img {
+    background-color: var(--color);
+    text-align: center;
+    
+}
+.section-img img {
+    border-radius: 50%;
+    max-width: 25em;
+}
+
+/* --> RESPONSIVE MENU <--  */
+@media screen and (min-width:43.75em){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    .nav-container ul {
+        display: flex;
+        gap: 0.6em;
+    }
+    .nav-container li:hover {
+        text-transform: none;
+    }
+    .nav-container li a:focus {
+        text-transform: none;
+    }
+}
+
+/* --> SECTION ABOUT ME <--  */
+.section-about {
+    background-color: var(--color);
+    color: var(--color1);
+}
+.section-about-container {
+    width: 80%;
+    margin: auto;
+}
+.section-about-container p {
+    padding: 0.8em 0;
+    text-indent: .6em;
+}
+.ola {
+    font-size: 1.8em;
+}
+
+/* --> RESPONSIVE ABOUT ME <--  */
+
+@media screen and (min-width:59.37em) {
+  .section-about {
+    display: flex;
+    gap: 1em;
+  } 
+  .section-img img {
+    border-radius: 20px;
+    padding: 1em ;
+    transition-duration: 1s;
+  }
+  .section-about-container p {
+    margin: 0 1em;
+  }
+}
