@@ -11,12 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Nunito:wght@200;400&family=PT+Sans&display=swap" rel="stylesheet">
     <!-- css-->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/js/bootstrap.min.js">
 </head>
 <body>
     <header class="header">
         <div class="header-box">
             <div class="header-container">
-                <h2 class="header-title">Fernanda Ferreira</h2>
+                <!-- <h2 class="header-title">Fernanda Ferreira</h2> -->
             </div>
             <nav class="nav-container">
                 <input type="checkbox" class="menu-btn" hidden id="menu-btn">
@@ -25,7 +28,7 @@
                 </label>
                 <ul class="header-menu">
                     <li class="nav-items"><a href="#section-about">Sobre Mim</a></li>
-                    <li class="nav-items"><a href="">Projetos</a></li>
+                    <li class="nav-items"><a href="#projetos">Projetos</a></li>
                     <li class="nav-items"><a href="">Habilidades</a></li>
                     <li class="nav-items"><a href="">Formação</a></li>
                     <li class="nav-items"><a href="">Contato</a></li>
@@ -33,6 +36,16 @@
             </nav>
         </div>
     </header>
+    <section>
+        <div>
+            <h2>Olá</h2>
+            <p>Sou a Fernanda Ferreira</p>
+            <p>Web developer Front-end</p>
+        </div>
+        <div>
+            <img src="" alt="Fernanda Ferreira">
+        </div>
+    </section>
     <section class="section-about" id="section-about">
         <div class="section-img">
             <img src="./img/img-fernanda.jpg" alt="Imagem Fernanda Ferreira">
@@ -75,6 +88,56 @@
             </p>
         </div>
     </section>
+    <section class="sectionProjetos" id="projetos">
+        <div class="titleProjetos">
+            <h1 >Projetos</h1>
+        </div>
+        <div class="row">
+            <div class="card col-6 col-sm-4 col-md-3 col-lg-2" >
+                <img src="./img/Saude e bem estar.png" class="card-img-top" alt="Site saúde e Bem estar">
+                <div class="card-body">
+                    <a href="https://fernandaregina.github.io/Ods-bem_estar_e_saude/" target="_blank">
+                        <h3 class="card-title">Saúde e Bem estar</h3>
+                        <p class="card-text">Explorando a ODS 3: Saúde e Bem-Estar Mundial 
+                            </p>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="./img/BurguerCraft.png" class="card-img-top" alt="Site Burguer Craft">
+                <div class="card-body">
+                    <a href="https://fernandaregina.github.io/BurguerCraft/" target="_blank">
+                        <h3 class="card-title">Burguer Craft</h3>
+                        <p class="card-text">Cardapio Burguer Craft, saboreie a excelência
+                            do sabor artesanal! 
+                            </p>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3 col-lg-2" >
+                <img src="./img/Elas na tech.png" class="card-img-top" alt="Site Elas na tech">
+                <div class="card-body">
+                    <a href="https://fernandaregina.github.io/ElasNaTech/" target="_blank">
+                        <h3 class="card-title">Elas na Tech</h3>
+                        <p class="card-text">Mulheres da tecnologia que Inspiram!  
+                            </p>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-6 col-sm-4 col-md-3 col-lg-2">
+                <img src="./img/Receita Lasanha.png" class="card-img-top" alt="Site Elas na tech">
+                <div class="card-body">
+                    <a href="https://fernandaregina.github.io/Receita/" target="_blank">
+                        <h3 class="card-title">Receita Lasanha a Bolonhesa</h3>
+                        <p class="card-text">Descubra uma receita irresistível em apenas um clique!   
+                            </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Transformando Ideias em Realidade Digital -->
     
 </body>

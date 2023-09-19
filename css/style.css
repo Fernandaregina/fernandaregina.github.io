@@ -30,6 +30,7 @@ body {
     max-width: 100%;
     height: auto; 
     display: block;
+    z-index: 1;
     
 }
 .header-box {
@@ -38,6 +39,7 @@ body {
     padding: 1em;
     max-width: 100%;
     height: auto; 
+    
 }
 .header-container {
     text-align: center;
@@ -152,11 +154,13 @@ transform: rotate(-45deg);
         position: sticky;
         top: 0;
         left: 0;
+        z-index: 1;
     }
     .header-box {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
     }
     .header-menu {
         position: static;
@@ -183,6 +187,7 @@ transform: rotate(-45deg);
 .section-about {
     background-color: var(--color);
     color: var(--color1);
+    margin-bottom: 5em ;
 }
 .section-img img {
     max-width: 100%;
@@ -216,4 +221,38 @@ transform: rotate(-45deg);
   .section-about-container p {
     margin: 0 1em;
   }
+}
+
+/* --> SECTION PROJETOS <--  */
+.titleProjetos {
+    text-align: center;
+    padding: 1em 0;
+}
+.row {
+    justify-content: center;
+    
+}
+.card {
+    width: 15em;
+    margin: 2em 1em ;
+    justify-content: center;
+}
+.card:hover {
+    background-color: var(--color4);
+    color: var(--color1);
+}
+.card:hover h3 {
+    color: var(--color1);
+}
+.card:hover p {
+    color: var(--color1);
+}
+.card a {
+    text-decoration: none;
+}
+.card a h3 {
+    color: var(--color);
+}
+.card a p {
+    color: var(--color5);
 }
