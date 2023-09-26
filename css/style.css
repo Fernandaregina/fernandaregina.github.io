@@ -345,17 +345,21 @@ transform: rotate(-45deg);
     .section-hab-items{
         display:flex;
         justify-content: space-evenly;
+        padding: 5em 0;
     }
 }
 
 /* --> SECTION CONTATO<--  */
-
+#contato {
+    padding: 5em 0;
+}
 .contato-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 5em 0;
 }
 .dados-contato {
+    font-family: var(--font-titulos);
     color: var(--color3);
 }
 
@@ -393,9 +397,9 @@ transform: rotate(-45deg);
 .input-box input:valid ~ span,
 .input-box input:focus ~ span {
     color: var(--color1);
-    transform: translateX(0.625em) translateY(-0.4375em);
-    font-size: 0.65em;
-    padding: 0 0.62em;
+    transform: translateX(0.625em) translateY(-0.60em);
+    font-size: 0.60em;
+    padding: 0 0.60em;
     background: var(--color);
     border-left: 1px solid var(--color4);
     border-right: 1px solid var(--color4);
@@ -433,4 +437,27 @@ transform: rotate(-45deg);
 
 .dados-contato img {
     height: 3em;
+}
+.btn button{
+    background-color: var(--color);
+    color: var(--color1);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.btn button:hover, 
+.btn button:focus {
+    background-color: var(--color3);
+    font-weight: bolder;
+}
+
+@media screen and (max-width:49em) {
+    .contato-container {
+        display: block;
+    }
+    .dados-contato {
+        text-align: center;
+        margin-bottom: 4em;
+    }
 }
