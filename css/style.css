@@ -5,11 +5,12 @@
     --font-secundaria: 'Nunito';
 
     --color:  #2C3437;
-    --color1: #F3E8EE;
+    --color1: #D4D3CF;
     --color2: #A5C4CF;
     --color3: #687B82;
     --color4: #72878F;
     --color5: #546369;
+   
 
 }
 * {
@@ -44,15 +45,7 @@ body {
 .header-container {
     text-align: center;
 }
-.header-title {
-    color: var(--color1);
-    font-family: var(--font-titulos);
-    text-transform: uppercase;
-    font-weight: lighter;
-    letter-spacing: 0.2em;
-    text-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.479);
-    white-space: nowrap;
-}
+
 
 .nav-container {
     display: flex;
@@ -182,12 +175,58 @@ transform: rotate(-45deg);
         text-transform: none;
     }
 }
+/* --> SECTION HOME <--  */
+.sectionHome {
+    display: flex;
+    background-color: var(--color6);
+    margin: auto;
+    width: 50%;
+    align-items: center;
+    height: 35em;
+    justify-content: space-between;
+    padding-top: 10.3em;
+}
+.sectionHome_img img {
+    max-width: 30em;
+    height: auto;
+    opacity: 0.45;
+}
+.sectionHome_title {
+    color: var(--color);
+    font-family: var(--font-titulos);
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 0.2em;
+    text-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.379);
+    white-space: nowrap;
+}
+.sectionHome_title span {
+    font-weight:bold;
+}
+
+@media screen and (max-width:59.37em) {
+    .sectionHome {
+        display: block;
+        padding-top: 2.7em;
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width:40em){
+    .sectionHome {
+        padding-top: 2.9em;
+        width: 100%;
+        margin-left: 1em;
+    }
+}
 
 /* --> SECTION ABOUT ME <--  */
 .section-about {
     background-color: var(--color);
     color: var(--color1);
-    margin-bottom: 5em ;
+    padding-bottom: 5em ;
+    padding-top: 5em;
 }
 .section-img img {
     max-width: 100%;
@@ -202,8 +241,18 @@ transform: rotate(-45deg);
     padding: 0.8em 0;
     text-indent: .6em;
 }
-.ola {
-    font-size: 1.8em;
+
+.about-doc img {
+    width: 1.5em;
+    color: var(--color1);
+}
+.about-doc {
+    text-align: center;
+    margin-top: 2em;
+}
+.about-doc-link {
+    text-decoration: none;
+    color: var(--color1);
 }
 
 /* --> RESPONSIVE ABOUT ME <--  */
@@ -224,13 +273,19 @@ transform: rotate(-45deg);
 }
 
 /* --> SECTION PROJETOS <--  */
+.sectionProjetos {
+    padding: 4em 0;
+
+}
 .titleProjetos {
     text-align: center;
     padding: 1em 0;
+    font-family: var(--font-titulos);
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.379);
 }
 .row {
-    justify-content: center;
-    
+    justify-content: center;        
 }
 .card {
     width: 15em;
@@ -256,3 +311,9 @@ transform: rotate(-45deg);
 .card a p {
     color: var(--color5);
 }
+.card img {
+    margin-top: 1em;
+}
+/* ------------------------ */
+
+
