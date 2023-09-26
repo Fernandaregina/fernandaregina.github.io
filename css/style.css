@@ -4,11 +4,11 @@
     --font-titulos: 'Montserrat';
     --font-secundaria: 'Nunito';
 
-    --color:  #2C3437;
+    --color:  #2c3437;
     --color1: #D4D3CF;
-    --color2: #A5C4CF;
+    --color2: #a5c4cf;
     --color3: #687B82;
-    --color4: #72878F;
+    --color4: #72878f;
     --color5: #546369;
    
 
@@ -19,6 +19,7 @@
 }
 body {
     font-family: var(--font-secundaria);
+    overflow-x: hidden; 
 }
 
 /* --> HEADER <--  */
@@ -274,8 +275,8 @@ transform: rotate(-45deg);
 
 /* --> SECTION PROJETOS <--  */
 .sectionProjetos {
-    padding: 4em 0;
-
+    padding-top: 8em;
+    margin-bottom: 5em;    
 }
 .titleProjetos {
     text-align: center;
@@ -285,7 +286,8 @@ transform: rotate(-45deg);
     text-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.379);
 }
 .row {
-    justify-content: center;        
+    justify-content: center;     
+    margin-bottom: 5em;   
 }
 .card {
     width: 15em;
@@ -316,4 +318,119 @@ transform: rotate(-45deg);
 }
 /* ------------------------ */
 
+/* --> SECTION HABILIDADES <--  */
+.section-hab {
+    background-color: #2C3437;
+    padding: 5em 0;
+    
+}
+.section-hab-items {
+    text-align: center;
+    
+}
+.section-hab-items img {
+    height: 6em;
+    padding: 1em;
+}
+.section-hab-items span {
+    color: var(--color2);
+    display: none;
+}
+.section-hab-items div.active span {
+    display: block; 
+}
 
+
+@media screen and (min-width:49em) {
+    .section-hab-items{
+        display:flex;
+        justify-content: space-evenly;
+    }
+}
+
+/* --> SECTION CONTATO<--  */
+
+.contato-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5em 0;
+}
+.dados-contato {
+    color: var(--color3);
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8em;
+}
+.input-box {
+    position: relative;
+    width: 15.62em;
+}
+.input-box input {
+    width: 100%;
+    padding: .62em;
+    border: 1px solid rgba(114, 135, 143, 0.25);
+    border-radius: 5px;
+    outline: none;
+    color: var(--color4);
+    font-size: 1em;
+    transition: 0.5s;
+}
+.input-box span {
+    position: absolute;
+    left: 0;
+    padding: 0.62em;
+    pointer-events: none;
+    font-size: 1em;
+    color: var(--color4);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.input-box input:valid ~ span,
+.input-box input:focus ~ span {
+    color: var(--color1);
+    transform: translateX(0.625em) translateY(-0.4375em);
+    font-size: 0.65em;
+    padding: 0 0.62em;
+    background: var(--color);
+    border-left: 1px solid var(--color4);
+    border-right: 1px solid var(--color4);
+    letter-spacing: 0.2em;
+}
+.input-box input:valid ,
+.input-box input:focus {
+    border: 1px solid rgb(44, 52, 55);
+}
+.input-box textarea {
+    border: 1px solid rgba(114, 135, 143, 0.25);
+    border-radius: 5px;
+    outline: none;
+    color: var(--color4);
+    font-size: 1em;
+    transition: 0.5s;
+    
+}
+.input-box textarea:valid ,
+.input-box textarea:focus {
+    border: 1px solid rgb(44, 52, 55); 
+    
+}
+.input-box textarea:valid ~ span,
+.input-box textarea:focus ~ span {
+    color: var(--color1);
+    transform: translateX(0.625em) translateY(-0.4375em);
+    font-size: 0.65em;
+    padding: 0 0.62em;
+    background: var(--color);
+    border-left: 1px solid var(--color4);
+    border-right: 1px solid var(--color4);
+    letter-spacing: 0.2em;
+}
+
+.dados-contato img {
+    height: 3em;
+}
