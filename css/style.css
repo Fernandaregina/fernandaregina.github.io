@@ -14,7 +14,9 @@
 
 }
 html {
-    height: 100vh;
+    
+    overflow-x: hidden; 
+    height: 100%;
 }
 * {
     margin: 0;
@@ -23,7 +25,6 @@ html {
 }
 body {
     font-family: var(--font-secundaria);
-    overflow-x: hidden; 
 }
 
 /* --> HEADER <--  */
@@ -365,6 +366,7 @@ transform: rotate(-45deg);
 
 /* --> SECTION CONTATO<--  */
 #contato {
+    overflow-x: hidden; 
     padding: 5em 0;
 }
 .contato-container {
