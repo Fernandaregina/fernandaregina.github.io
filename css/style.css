@@ -144,7 +144,7 @@ transform: rotate(-45deg);
 }
 .section-img img {
     border-radius: 50%;
-    max-width: 25em;
+    width: 100%;
 }
 
 /* --> RESPONSIVE MENU <--  */
@@ -190,10 +190,10 @@ transform: rotate(-45deg);
     align-items: center;
     height: 35em;
     justify-content: space-between;
-    padding-top: 10.3em;
+    padding-top: 8.5em;
 }
 .sectionHome_img img {
-    max-width: 30em;
+    width: 25em;
     height: auto;
     opacity: 0.45;
 }
@@ -213,19 +213,50 @@ transform: rotate(-45deg);
 @media screen and (max-width:59.37em) {
     .sectionHome {
         display: block;
-        padding-top: 2.7em;
+        padding-top: 4.1em;
         width: 80%;
+    }
+    .sectionHome_img img {
+        width: 22em;
+        height: auto;
+        opacity: 0.45;
     }
     
 }
 
 @media screen and (max-width:40em){
     .sectionHome {
-        padding-top: 2.9em;
-        width: 100%;
+        display: inline;
+        vertical-align: bottom;
+        /* padding-top: 5.5em; */
         margin-left: 1em;
     }
+    .sectionHome_img img {
+        width: 20em;
+        height: auto;
+        opacity: 0.45;
+    }
+   
 }
+@media screen and (max-width:20.31em){
+    .sectionHome {
+        display: inline;
+        vertical-align: bottom;
+        margin-left: 1em;
+        
+    }
+    .sectionHome_title{
+        width: 100%;
+        white-space: pre-line;
+    }
+    .sectionHome_img img {
+        width: 100%;
+        height: auto;
+        opacity: 0.45;
+    }
+   
+}
+
 
 /* --> SECTION ABOUT ME <--  */
 .section-about {
@@ -293,6 +324,7 @@ transform: rotate(-45deg);
 .row {
     justify-content: center;     
     margin-bottom: 5em;   
+    width: 100%;
 }
 .card {
     width: 15em;
