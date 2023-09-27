@@ -13,9 +13,13 @@
    
 
 }
+html {
+    height: 100vh;
+}
 * {
     margin: 0;
     padding: 0;
+    
 }
 body {
     font-family: var(--font-secundaria);
@@ -319,6 +323,16 @@ transform: rotate(-45deg);
 /* ------------------------ */
 
 /* --> SECTION HABILIDADES <--  */
+.hab-item-title {
+    text-align: center;
+    padding-top: 2em;
+}
+.hab-title{
+    color: var(--color2);
+    font-family: var(--font-titulos);
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px  rgba(0, 0, 0, 0.379);
+}
 .section-hab {
     background-color: #2C3437;
     padding: 5em 0;
@@ -460,4 +474,17 @@ transform: rotate(-45deg);
         text-align: center;
         margin-bottom: 4em;
     }
+}
+
+/* --> FOOTER <--  */
+
+footer {
+    font-family: var(--font-titulos);
+    background-color: var(--color);
+    letter-spacing: 0.2em;
+}
+.footer-item {
+    text-align: center;
+    color: var(--color1);
+    padding: 2em;
 }

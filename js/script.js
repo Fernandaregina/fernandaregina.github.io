@@ -1,3 +1,4 @@
+// __________Habilidades________________________
 const divs = document.querySelectorAll('.section-hab div');
 
 divs.forEach((div) => {
@@ -13,3 +14,13 @@ divs.forEach((div) => {
        
     });
 });
+
+
+// __________ Footer________________________
+
+
+const dataAtual = new Date();
+const anoAtual = dataAtual.getFullYear();
+
+document.getElementById('anoAtual').innerText = anoAtual;
+
