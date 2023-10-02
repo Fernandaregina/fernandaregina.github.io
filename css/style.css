@@ -516,9 +516,41 @@ footer {
     font-family: var(--font-titulos);
     background-color: var(--color);
     letter-spacing: 0.2em;
+    
 }
 .footer-item {
     text-align: center;
     color: var(--color1);
     padding: 2em;
+}
+.creditos {
+    padding-top: 1em;
+    
+}
+.creditos ul {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+.creditos li {
+    list-style: none;
+    padding: 0.5em ;
+    border-radius: 5px;
+}
+.creditos a {
+    text-decoration: none;
+    color: var(--color1);
+}
+.creditos a:hover,
+.creditos a:focus {
+    color: var(--color4);
+}
+
+
+@media screen and (max-width:49em) {
+    .creditos ul {
+        display: block;
+        gap: 2em;
+        text-align: center;
+    }
 }
