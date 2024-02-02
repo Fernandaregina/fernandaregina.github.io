@@ -27,9 +27,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Layout feito por mim durante a produção do projeto. 
 
-## :memo: Licença
-
-Esse projeto está sob a licença MIT.
 
 ---
 
